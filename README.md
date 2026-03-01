@@ -26,41 +26,15 @@ materias, incluyendo su relación muchos-a-muchos.
 src\
 ├── main\
 │ ├── java/sv/edu/udb\
-│ │ ├── controller\
-│ │ ├── service\
+│ │ ├── domain\
 │ │ ├── repository\
-│ │ └── model\
 │ └── resources\
 │ ├── application.properties\
 │ └── data.sql\
+│└── schema.sql\
 └── test\
 └── java/sv/edu/udb
 
-------------------------------------------------------------------------
-
-## Modelo de datos
-
-### Alumno
-
--   id
--   nombre
--   relación muchos-a-muchos con Materia
-
-### Materia
-
--   id
--   nombre
--   relación muchos-a-muchos con Alumno
-
-Tabla intermedia:
-
-alumno_materia\
-- id_alumno\
-- id_materia
-
-Clave primaria compuesta:
-
-PRIMARY KEY (id_alumno, id_materia)
 
 
 ## Autor
